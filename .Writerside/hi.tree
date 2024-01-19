@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="SpaceGameDev Docs"
+                 start-page="Welcome.md">
+
+    <toc-element topic="Welcome.md">
+        <toc-element topic="Blue-Screen-Of-Death.md"/>
+        <toc-element topic="Scenarios.md">
+            <toc-element topic="Server-is-unreachable.md"/>
+        </toc-element>
+        <toc-element topic="Default-topic.md"/>
+    </toc-element>
+</instance-profile>
