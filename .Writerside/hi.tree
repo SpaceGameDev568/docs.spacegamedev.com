@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="hi"
-                 name="SpaceGameDev Docs"
+                 name="SpaceGameDevelopers"
                  start-page="Welcome.md">
 
     <toc-element topic="Welcome.md">
@@ -16,10 +16,14 @@
         </toc-element>
         <toc-element topic="Default-topic.md"/>
     </toc-element>
+    <toc-element topic="Server-Documentation.md">
+        <toc-element topic="Server-Scripts.md"/>
+    </toc-element>
     <toc-element topic="Crafty-Controller.md">
         <toc-element topic="Permissions.md"/>
     </toc-element>
     <toc-element topic="mods.md">
+        <toc-element topic="Mod-Update-Notifier.md"/>
         <toc-element topic="Remove-All-Annoyances.md"/>
         <toc-element topic="2m-Walls.md"/>
         <toc-element topic="Better-Grass.md"/>
