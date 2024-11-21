@@ -91,6 +91,8 @@ You'll also need to right-click on the `Transform` input and click "Split Struct
 Save and compile your work.
 Your mod should now automatically be registered by Mod Update Notifier when the game starts.
 
+## Verifying that your mod works
+
 You can verify that it's working by launching the game and looking at the log.
 Search for `ModUpdateNotifier` until you find the build info, which will list the detected mods below:
 
