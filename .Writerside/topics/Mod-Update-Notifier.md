@@ -19,8 +19,20 @@ When you are done, you should have a folder structure something like this:
 Next, regenerate and build your project files as explained 
 [on the Satisfactory Modding Documentation](https://docs.ficsit.app/satisfactory-modding/latest/Development/BeginnersGuide/project_setup.html#_generate_visual_studio_files) and come back here when you're done.
 
-Open the Unreal Editor if you haven't already,
-and navigate to the root directory of the mod in which you wish to implement Mod Update Notifier functionality.
+Open the Unreal Editor if you haven't already, and open the Alpakit Dev window.
+
+![alpakit-dev.png](alpakit-dev.png)
+
+Next, click "Edit" on the mod for which you wish to implement Mod Update Notifier functionality.
+Scroll down to the "Dependencies" section and click the plus icon to add an element.
+Set the name of this element to `ModUpdateNotifier` and the "Sem Version" to `^2.1.0` or [whatever the latest version is](https://ficsit.app/mod/ModUpdateNotifier)
+(Make sure to include the `^` at the beginning to accept newer versions of MUN as it is updated).
+Leave "Optional" and "Base Plugin" unchecked.
+
+![dependencies.png](dependencies.png)
+
+
+Now, navigate to your mod's root directory.
 Create a new Blueprint Class of type: `MUNInfoActor` and name it `MIA_YourModName`,
 replacing `YourModName` with the internal name of your mod.
 
@@ -89,7 +101,7 @@ You'll also need to right-click on the `Transform` input and click "Split Struct
 ![split-struct-pin.png](split-struct-pin.png)
 
 Save and compile your work.
-Your mod should now automatically be registered by Mod Update Notifier when the game starts.
+Your mod should now automatically be registered by Mod Update Notifier when the game starts!
 
 ## Verifying that your mod works
 
