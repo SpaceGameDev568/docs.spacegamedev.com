@@ -54,12 +54,37 @@ Your mod should now automatically be registered by Mod Update Notifier when the 
 
 ## Verifying that your mod works
 
-You can verify that it's working by launching the game and looking at the log.
-Search for `ModUpdateNotifier` until you find the build info, which will list the detected mods below:
+First, package your mod for development using Alpakit.
+Then you can verify that it's working by launching the game and opening the log
+located at
+
+`%\LOCALAPPDATA%\FactoryGame\Saved\Logs\FactoryGame.log`
+
+in a text editor such as VS Code.
+Search for `ModUpdateNotifier` until you find the build info, which will list the detected mods below it like this:
 
 ![debug-log.png](debug-log.png)
 
 If you do not see your mod in the list, go back and re-read the instructions for how to set it up.
+
+### Version tricking
+
+You can also trick MUN into determining your mod to be out of date, in order to test whether your mod is registered properly.
+To do this, open your mod's generated `.uplugin` file located in your game install location, under
+
+`FactoryGame\Mods\YourModName\YourModName.uplugin`
+
+Change the `SemVersion` and `VersionName` fields of your mod to something older than the latest version on SMR.
+You may also need to change the `Version` field to match the major version of the other fields.
+
+![version-tricking.png](version-tricking.png)
+
+Save the file and launch the game again.
+If everything is working properly, you should see the Mod Update Notifier widget on the Main Menu showing your mod as out-of-date.
+
+![mun-version-tricked-widget.png](mun-version-tricked-widget.png)
+
+When you're done, make sure to set the uplugin fields back to their original values to avoid any potential issues.
 
 ## Optional: Automatically install MUN alongside your own mod
 
@@ -92,4 +117,4 @@ Now you can safely delete your `MIA_YourModName` Blueprint Class, as this is no 
 
 ![delete-info-actor.png](delete-info-actor.png)
 
-Continue with the "Getting Started" section, as that will cover everything else about the upgrade process.
+Continue with the ["Getting Started"](Mod-Update-Notifier.md#getting-started) section, as that will cover everything else about the upgrade process.
