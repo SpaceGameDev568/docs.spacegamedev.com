@@ -16,7 +16,7 @@ Next, add a variable called `ModUpdateNotifier_SMR_ID` of type `String` and comp
 
 ![SMR_ID-Variable-Hierarchy.png](../../../assets/images/SMR_ID-Variable-Hierarchy.png)
 
-To get your mod's ID, go to [](https://api.ficsit.app/v2) in your browser.
+To get your mod's ID, go to [https://api.ficsit.app/v2](https://api.ficsit.app/v2) in your browser.
 In the left panel, you'll see a bunch of commented out stuff, which you can delete.
 Next, copy and paste this query command into the input field:
 
