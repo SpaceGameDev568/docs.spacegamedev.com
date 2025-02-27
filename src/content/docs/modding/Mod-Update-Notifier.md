@@ -23,14 +23,14 @@ Next, copy and paste this query command into the input field:
 `
 query
 {
-  getModByReference(modReference:Factory_Prop_Mod)
+  getModByReference(modReference:YourModName)
   {
     id
   }
 }
 `
 
-Make sure to replace `Factory_Prop_Mod` with your mod reference.
+Make sure to replace `YourModName` with your mod reference.
 
 ![gql-playground.png](../../../assets/images/gql-playground.png)
 
