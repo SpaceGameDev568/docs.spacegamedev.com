@@ -1,3 +1,0 @@
-# SatisWHACKtory
-
-Start typing here...

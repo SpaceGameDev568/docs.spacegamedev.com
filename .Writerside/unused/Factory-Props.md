@@ -1,3 +1,0 @@
-# Factory Props
-
-Start typing here...

@@ -1,3 +1,0 @@
-# Better Grass
-
-Start typing here...

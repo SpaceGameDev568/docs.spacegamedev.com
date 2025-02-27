@@ -1,3 +1,0 @@
-# 2m Walls
-
-Start typing here...

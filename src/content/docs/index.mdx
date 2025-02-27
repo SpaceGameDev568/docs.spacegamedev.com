@@ -1,0 +1,34 @@
+---
+title: Welcome to SpaceGameDev Docs
+description: Get started developing with SpaceGameDev Software.
+template: splash
+hero:
+  tagline: Get started developing with SpaceGameDev Software.
+  image:
+    file: ../../assets/spacegamedev-modding.png
+  actions:
+    - text: Mod Update Notifier
+      link: /modding/mod-update-notifier
+      icon: right-arrow
+    - text: View Mods
+      link: https://ficsit.app/user/5GqLMHyzA3myPG
+      icon: external
+      variant: minimal
+---
+
+import { LinkButton } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import BisectBanner from '../../assets/bisect-banner.webp';
+
+## Need a development server?
+
+BisectHosting has you covered! With their high-performance servers, instant setup, and 24/7 support, you can focus on making incredible mods instead of hassling with the backend.
+
+<LinkButton href="https://bisecthosting.com/spacegamedev" variant="primary">
+	Choose your Satisfactory server
+</LinkButton>
+
+<Image
+	src={BisectBanner}
+	alt="Get 25% off your first month of any BisectHosting server with code spacegamedev"
+/>
