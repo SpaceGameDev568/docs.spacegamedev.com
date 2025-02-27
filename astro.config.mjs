@@ -11,6 +11,7 @@ export default defineConfig({
           title: 'SpaceGameDev Docs',
           social: {
               github: 'https://github.com/SpaceGameDev568/docs.spacegamedev.com',
+              email: 'mailto:support@spacegamedev.com',
           },
           sidebar: [
               {
