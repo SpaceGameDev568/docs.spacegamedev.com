@@ -99,7 +99,7 @@ Open the Unreal Editor if you haven't already, and click the Alpakit Dev button.
 
 ![alpakit-dev.png](../../../assets/images/alpakit-dev.png)
 
-Next, click "Edit" on the mod for which you wish to implement Mod Update Notifier functionality.
+Next, click "Edit" on the mod for which you've implemented Mod Update Notifier functionality.
 Scroll down to the "Dependencies" section and click the plus icon to add an element.
 Set the name of this element to `ModUpdateNotifier` and the "Sem Version" to `^2.2.1` or [whatever the latest version is](https://ficsit.app/mod/ModUpdateNotifier)
 (Make sure to include the caret `^` at the beginning to allow newer versions of MUN as it is updated).
