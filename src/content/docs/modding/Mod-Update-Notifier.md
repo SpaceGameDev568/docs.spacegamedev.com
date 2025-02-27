@@ -1,6 +1,6 @@
 ---
 title: Mod Update Notifier
-description: A guide in my new Starlight docs site.
+description: Developer documentation for Mod Update Notifier
 ---
 
 This page is intended as a guide for developers to show how to implement Mod Update Notifier into your own mods.

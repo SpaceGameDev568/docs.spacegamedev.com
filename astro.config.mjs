@@ -22,6 +22,11 @@ export default defineConfig({
               // Path to your Tailwind base styles:
               './src/styles/global.css',
           ],
+        editLink: {
+          baseUrl: 'https://github.com/SpaceGameDev568/docs.spacegamedev.com/edit/master/',
+        },
+        lastUpdated: true,
+        credits: true,
       }),
 	],
 

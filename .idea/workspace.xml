@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c33e0fc1-e167-401f-8121-6f99b3e54f93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/docs/modding/Mod-Update-Notifier.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/docs/modding/Mod-Update-Notifier.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +91,7 @@
       <updated>1740671927267</updated>
       <workItem from="1740671928353" duration="302000" />
       <workItem from="1740672465713" duration="5067000" />
-      <workItem from="1740677606330" duration="924000" />
+      <workItem from="1740677606330" duration="1336000" />
     </task>
     <servers />
   </component>
