@@ -6,7 +6,7 @@ description: Developer documentation for Mod Update Notifier
 This page is intended as a guide for developers to show how to implement Mod Update Notifier into your own mods.
 If you have a question about anything covered here, please ping `spacegamedev` on the Satisfactory Modding Discord server for help.
 
-**If you are upgrading from v2.1.x of Mod Update Notifier, please read the ["Upgrade Guide: v2.1.x"](Mod-Update-Notifier.md#upgrade-guide-v2-1-x) section**
+**If you are upgrading from v2.1.x of Mod Update Notifier, please read the ["Upgrade Guide: v2.1.x"](/modding/mod-update-notifier#upgrade-guide-v21x) section**
 
 ## Getting started
 
