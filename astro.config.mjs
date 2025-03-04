@@ -13,6 +13,11 @@ export default defineConfig({
               github: 'https://github.com/SpaceGameDev568/docs.spacegamedev.com',
               email: 'mailto:support@spacegamedev.com',
           },
+          logo: {
+            light: './src/assets/light-logo.png',
+            dark: './src/assets/dark-logo.png',
+            replacesTitle: true,
+          },
           sidebar: [
               {
                   label: 'Modding',

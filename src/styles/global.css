@@ -8,7 +8,29 @@
 }
 
 /* This is the actual theme since Tailwind in Starlight seems a bit broken rn */
-:root {
-	--sl-font-system: 'Inter', 'sans-serif';
-	--sl-font-system-mono: 'JetBrains Mono', 'monospace';
+:root,
+::backdrop {
+	--sl-font: 'Inter', 'sans-serif';
+	--sl-font-mono: 'JetBrains Mono', 'monospace';
+	--sl-color-text: #FFFFFF;
+	--sl-color-text-accent: #3a6ac1;
+	--sl-color-text-invert: #000000;
+	--sl-color-bg: #13131c;
+	--sl-color-bg-nav: #181d25;
+	--sl-color-bg-sidebar: #181d25;
+	--sl-color-bg-inline-code: #353535;
+	--sl-color-bg-accent: #3a6ac1;
+}
+
+
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+	--sl-color-text: #000000;
+	--sl-color-text-accent: #1b57c4;
+	--sl-color-text-invert: #FFFFFF;
+	--sl-color-bg: #FFFFFF;
+	--sl-color-bg-nav: #e6e6e6;
+	--sl-color-bg-sidebar: #e6e6e6;
+	--sl-color-bg-inline-code: #bcbcbc;
+	--sl-color-bg-accent: #1b57c4;
 }
