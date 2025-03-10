@@ -3,76 +3,40 @@ title: Mod Update Notifier
 description: Developer documentation for Mod Update Notifier
 ---
 
-This page is intended as a guide for developers to show how to implement Mod Update Notifier into your own mods.
+This page is intended as a guide for developers for configuring Mod Update Notifier options within your own mods.
 If you have a question about anything covered here, please ping `spacegamedev` on the Satisfactory Modding Discord server for help.
 
-**If you are upgrading from v2.1.x of Mod Update Notifier, please read the ["Upgrade Guide: v2.1.x"](/modding/mod-update-notifier#upgrade-guide-v21x) section**
+**Written for:** `Mod Update Notifier v2.3.0`
 
-## Getting started
+## Options
 
-Implementing Mod Update Notifier is very simple.
 If you haven't already, create a Blueprint Class of type `MenuWorldModule`.
-Next, add a variable called `ModUpdateNotifier_SMR_ID` of type `String` and compile the Blueprint.
+This is where you'll add your configuration variables.
 
-![SMR_ID-Variable-Hierarchy.png](../../../assets/images/SMR_ID-Variable-Hierarchy.png)
+### Support URL
 
-To get your mod's ID, go to [https://api.ficsit.app/v2](https://api.ficsit.app/v2) in your browser.
-In the left panel, you'll see a bunch of commented out stuff, which you can delete.
-Next, copy and paste this query command into the input field:
+You can specify a URL for a donation button that will be displayed below the changelog when a user clicks on your mod.
 
-`
-query
-{
-  getModByReference(modReference:YourModName)
-  {
-    id
-  }
-}
-`
+**Name:** `ModUpdateNotifier_Support_URL`
 
-Make sure to replace `YourModName` with your mod reference.
+**Type:** `String`
 
-![gql-playground.png](../../../assets/images/gql-playground.png)
+**Example value:** `https://buymeacoffee.com/spacegamedev`
 
-Click the pink play button in the center to run the command.
-Now you should see a result in the right panel that looks something like this:
+### Opt Out
 
-`
-{
-"data": {
-"getModByReference": {
-"id": "8ivr6Mvuv4sCkX"
-}
-}
-}
-`
+If you don't want MUN to check for updates to your mod, you can opt out.
+Make sure to set it to true.
 
-with the ID value being unique to your mod.
-Copy the string from the `"id"` field and paste it into the Default Value field of your `ModUpdateNotifier_SMR_ID`.
+**Name:** `ModUpdateNotifier_OptOut`
 
-![SMR_ID_DefaultValue.png](../../../assets/images/SMR_ID_DefaultValue.png)
+**Type:** `Boolean`
 
-Save and compile your work.
-Your mod should now automatically be registered by Mod Update Notifier when the game starts!
+**Value:** `true`
 
-## Verifying that your mod works
+## Version tricking
 
-First, package your mod for development using Alpakit.
-Then you can verify that it's working by launching the game and opening the log
-located at
-
-`%\LOCALAPPDATA%\FactoryGame\Saved\Logs\FactoryGame.log`
-
-in a text editor such as VS Code.
-Search for `ModUpdateNotifier` until you find the build info, which will list the detected mods below it like this:
-
-![debug-log.png](../../../assets/images/debug-log.png)
-
-If you do not see your mod in the list, go back and re-read the instructions for how to set it up.
-
-### Version tricking
-
-You can also trick MUN into determining your mod to be out of date, in order to test whether your mod is registered properly.
+You can trick MUN into determining your mod to be out of date for testing.
 To do this, open your mod's generated `.uplugin` file located in your game install location, under
 
 `FactoryGame\Mods\YourModName\YourModName.uplugin`
@@ -101,29 +65,8 @@ Open the Unreal Editor if you haven't already, and click the Alpakit Dev button.
 
 Next, click "Edit" on the mod for which you've implemented Mod Update Notifier functionality.
 Scroll down to the "Dependencies" section and click the plus icon to add an element.
-Set the name of this element to `ModUpdateNotifier` and the "Sem Version" to `^2.2.2` or [whatever the latest version is](https://ficsit.app/mod/ModUpdateNotifier)
+Set the name of this element to `ModUpdateNotifier` and the "Sem Version" to `^2.3.0` or [whatever the latest version is](https://ficsit.app/mod/ModUpdateNotifier)
 (Make sure to include the caret `^` at the beginning to allow newer versions of MUN as it is updated).
 Leave "Optional" and "Base Plugin" unchecked.
 
 ![dependencies2.png](../../../assets/images/dependencies2.png)
-
-## Get your mod listed
-
-Once you've integrated Mod Update Notifier,
-ping me (`spacegamedev`) on the Modding Discord,
-so I can add your mod to the supported mods list!
-
-## Upgrade Guide: v2.1.x
-
-If you're upgrading from the 2.1.x version of MUN, please follow the instructions below.
-
-Open your Menu World Module and delete the `SpawnActor` node.
-You can also remove the `Event On Lifecycle Event` and `Switch on ELifecyclePhase` nodes if you're not using them for anything else.
-
-![menu-module-code.png](../../../assets/images/menu-module-code.png)
-
-Now you can safely delete your `MIA_YourModName` Blueprint Class, as this is no longer needed.
-
-![delete-info-actor.png](../../../assets/images/delete-info-actor.png)
-
-Continue with the ["Getting Started"](../../../assets/images/Mod-Update-Notifier.md#getting-started) section, as that will cover everything else about the upgrade process.
