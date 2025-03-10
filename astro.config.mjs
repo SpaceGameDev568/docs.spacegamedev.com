@@ -23,6 +23,11 @@ export default defineConfig({
                   label: 'Modding',
                   autogenerate: { directory: 'modding' },
               },
+              {
+                label: 'Main Site',
+                link: 'https://spacegamedev.com',
+                badge: 'External'
+              },
           ],
           customCss: [
               // Path to your Tailwind base styles:
