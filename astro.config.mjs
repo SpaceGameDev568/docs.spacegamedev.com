@@ -9,10 +9,11 @@ export default defineConfig({
   integrations: [
       starlight({
           title: 'SpaceGameDev Docs',
-          social: {
-              github: 'https://github.com/SpaceGameDev568/docs.spacegamedev.com',
-              email: 'mailto:support@spacegamedev.com',
-          },
+          social: [
+              { icon: 'github', label: 'GitHub', href: 'https://github.com/SpaceGameDev568/docs.spacegamedev.com' },
+              { icon: 'discord', label: 'Discord', href: 'https://discord.gg/tgNjem4bjU' },
+              { icon: 'email', label: 'Email', href: 'mailto:support@spacegamedev.com' },
+          ],
           logo: {
             light: './src/assets/light-logo.png',
             dark: './src/assets/dark-logo.png',
@@ -34,7 +35,7 @@ export default defineConfig({
               './src/styles/global.css',
           ],
         editLink: {
-          baseUrl: 'https://github.com/SpaceGameDev568/docs.spacegamedev.com/edit/master/',
+          baseUrl: 'https://github.com/SpaceGameDev568/docs.spacegamedev.com/blob/master/',
         },
         lastUpdated: true,
         credits: true,
