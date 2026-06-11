@@ -20,11 +20,11 @@ export default defineConfig({
             replacesTitle: true,
           },
           sidebar: [
-              {
-                  label: 'Modding',
-                  autogenerate: { directory: 'modding' },
-              },
-              {
+            {
+              label: 'Modding',
+              items: [{ autogenerate: { "directory": "modding" } }]
+            },
+            {
                 label: 'Main Site',
                 link: 'https://spacegamedev.com',
                 badge: 'External'
