@@ -6,7 +6,7 @@ description: Developer documentation for Mod Update Notifier
 This page is intended as a guide for developers for configuring Mod Update Notifier options within your own mods.
 If you have a question about anything covered here, please ping `spacegamedev` on the Satisfactory Modding Discord server for help.
 
-**Written for:** `Mod Update Notifier v2.3.0`
+**Last tested in version:** `Mod Update Notifier v2.5.0`<br/>
 
 ## Options
 

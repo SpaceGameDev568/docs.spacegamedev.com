@@ -11,12 +11,11 @@ export default defineConfig({
           title: 'SpaceGameDev Docs',
           social: [
               { icon: 'github', label: 'GitHub', href: 'https://github.com/SpaceGameDev568/docs.spacegamedev.com' },
-              { icon: 'discord', label: 'Discord', href: 'https://discord.gg/tgNjem4bjU' },
-              { icon: 'email', label: 'Email', href: 'mailto:support@spacegamedev.com' },
+              { icon: 'discord', label: 'Discord', href: 'https://discord.gg/tgNjem4bjU' }
           ],
           logo: {
-            light: './src/assets/light-logo.png',
-            dark: './src/assets/dark-logo.png',
+            light: './public/favicon.svg',
+            dark: './public/favicon.svg',
             replacesTitle: true,
           },
           sidebar: [
